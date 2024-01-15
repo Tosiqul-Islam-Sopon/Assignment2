@@ -183,6 +183,9 @@ main {
     border-radius: 16px;
     position: relative;
     background: linear-gradient(0deg, rgba(19, 19, 24, 0.20) 0%, rgba(19, 19, 24, 0.20) 100%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: none;
 }
 
 .destination_img_text {
@@ -233,6 +236,73 @@ main {
     gap: 10px;
 }
 
+/* Why Choose Us */
+.choose {
+    margin-top: 80px;
+}
+
+.choose_title_container {
+    width: 60%;
+    margin: auto;
+    text-align: center;
+}
+
+.choose_title {
+    color: #131318;
+    font-size: 2.2rem;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+
+.choose_des {
+    color: rgba(19, 19, 24, 0.70);
+    margin-bottom: 40px;
+}
+.choose_box_child{
+    padding: 20px;
+}
+.choose_box1 {
+    border-radius: 16px;
+    border: 1px solid rgba(251, 181, 99, 0.20);
+    background: rgba(251, 181, 99, 0.05);
+    /* width: 50%; */
+    grid-area: box1;
+}
+.choose_box2{
+    border-radius: 16px;
+    border: 1px solid rgba(41, 206, 246, 0.20);
+    background: rgba(41, 206, 246, 0.05);
+    /* width: 50%; */
+    grid-area: box2;
+}
+.choose_box3{
+    border-radius: 16px;
+    border: 1px solid rgba(233, 68, 68, 0.20);
+    background: rgba(233, 68, 68, 0.05);
+    width: 50%;
+    margin: auto;
+    grid-area: box3;
+}
+.box_img{
+    width: 13%;
+}
+.box_title{
+    color: #131318;
+    font-size: 1.3rem;
+    font-weight: 800;
+}
+.box_des{
+    color: #5A5A5D;
+}
+.box_container{
+    display: grid;
+    grid-template-areas: 
+    "box1 box1 box2 box2"
+    "box3 box3 box3 box3"
+    ;
+    gap: 15px;
+}
+
 /* Responsive for mobile */
 @media screen and (max-width: 600px) {
 
@@ -270,25 +340,36 @@ main {
     }
 
     .text {
-        width: 95%;
+        width: 93%;
     }
 
     .popular {
         flex-direction: column;
     }
 
-    .destination_title{
+    .destination_title {
         font-size: 1.5rem;
     }
-    .destination_item2{
-        grid-template-areas: 
-        "img1"
-        "img2"
-        "img3"
-        "img4"
-        "img5"
-        "img6"
-        "img7"
+
+    .destination_item2 {
+        grid-template-areas:
+            "img1"
+            "img2"
+            "img3"
+            "img4"
+            "img5"
+            "img6"
+            "img7"
         ;
+    }
+    .box_container{
+        grid-template-areas: 
+        "box1"
+        "box2"
+        "box3"
+        ;
+    }
+    .choose_box3{
+        width: 100%;
     }
 }
