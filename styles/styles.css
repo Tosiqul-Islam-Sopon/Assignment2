@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;500;600;700;800&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+/* Shared Styles */
+
+
+/* Header Styles */
+header {
+    font-family: 'Mulish', sans-serif;
+    padding: 50px 80px;
+}
+
+/* Navbar Styles */
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.menu_bar{
+    display: none;
+}
+.nav_title_container {
+    display: flex;
+    align-items: center;
+}
+
+.nav ul {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+.nav ul a {
+    text-decoration: none;
+}
+
+.color_des1 {
+    color: #424247;
+}
+
+.nav_icon {
+    width: 8%;
+}
+
+.nav_title {
+    color: #131318;
+    font-size: 2rem;
+    font-weight: 800;
+}
+
+.tours {
+    color: #FF5400;
+}
+
+.home {
+    color: #FF5400;
+}
+
+/* Banner */
+.banner {
+    margin-top: 50px;
+    background: linear-gradient(180deg, rgba(19, 19, 24, 0.80) 0%, rgba(19, 19, 24, 0.00) 100%), url("../Images/Group\ 13\ \(1\)\ \(1\).png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 16px;
+    padding: 90px 150px;
+    text-align: center;
+}
+
+.banner_title {
+    color: #FFF;
+    font-size: 3rem;
+    font-weight: 800;
+}
+
+.banner_des {
+    margin-top: 15px;
+    color: #FFF;
+}
+.input_fields {
+    margin-top: 25px;
+    padding: 15px 20px;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.30);
+    display: flex;
+    /* align-items: flex-start; */
+    justify-content: space-between;
+    gap: 10px;
+}
+.input{
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    /* flex: 1; */
+}
+.input_btn{
+    background-color: #FF5400;
+    color: #FFF;
+}
+
+
+/* Responsive for mobile */
+@media screen and (max-width: 600px) {
+    header{
+        padding: 40px;
+    }
+    .nav ul a{
+        display: none;
+    }
+    .menu_bar{
+        display: flex;
+    }
+    .nav_title{
+        font-size: 1.4rem;
+    }
+    .nav_icon{
+        width: 12%;
+    }
+    .banner{
+        padding: 10px;
+    }
+    .banner_title{
+        font-size: 2rem;
+    }
+    .input_fields{
+        flex-direction: column;
+    }
+    
+    .text{
+        width: 95%;
+    }
+}
