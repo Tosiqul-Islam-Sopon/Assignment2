@@ -21,21 +21,23 @@ header {
     justify-content: space-between;
     align-items: center;
 }
-.menu_bar{
+
+.menu_bar {
     display: none;
 }
+
 .nav_title_container {
     display: flex;
     align-items: center;
 }
 
-.nav ul {
+.nav>ul {
     display: flex;
     list-style: none;
     gap: 25px;
 }
 
-.nav ul a {
+.nav>ul>li>a {
     text-decoration: none;
 }
 
@@ -82,57 +84,101 @@ header {
     margin-top: 15px;
     color: #FFF;
 }
+
 .input_fields {
     margin-top: 25px;
     padding: 15px 20px;
     border-radius: 8px;
     background: rgba(255, 255, 255, 0.30);
     display: flex;
-    /* align-items: flex-start; */
     justify-content: space-between;
     gap: 10px;
 }
-.input{
+
+.input {
     width: 100%;
     padding: 10px;
     border-radius: 10px;
     border: none;
-    /* flex: 1; */
 }
-.input_btn{
+
+.btn_primery {
     background-color: #FF5400;
     color: #FFF;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+}
+
+/* main */
+main {
+    font-family: 'Mulish', sans-serif;
+    padding: 50px 80px;
+}
+
+/*Our Popular Tour */
+.popular {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.popular_item {
+    flex: 1;
+}
+
+.popular_img {
+    width: 97%;
+}
+
+.popular_title {
+    color: #131318;
+    font-size: 2.2rem;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+.popular_des{
+    color: rgba(19, 19, 24, 0.70);
+}
+.popular_list{
+    padding: 20px 0px 20px 30px;
+}
+.popular_btn{
+    margin-top: 20px;
 }
 
 
 /* Responsive for mobile */
 @media screen and (max-width: 600px) {
-    header{
+    header,main {
         padding: 40px;
     }
-    .nav ul a{
+    .nav ul a {
         display: none;
     }
-    .menu_bar{
+    .menu_bar {
         display: flex;
     }
-    .nav_title{
+    .nav_title {
         font-size: 1.4rem;
     }
-    .nav_icon{
+    .nav_icon {
         width: 12%;
     }
-    .banner{
+    .banner {
         padding: 10px;
     }
-    .banner_title{
+    .banner_title {
         font-size: 2rem;
     }
-    .input_fields{
+    .input_fields {
         flex-direction: column;
     }
-    
-    .text{
+    .text {
         width: 95%;
+    }
+
+    .popular{
+        flex-direction: column;
     }
 }
