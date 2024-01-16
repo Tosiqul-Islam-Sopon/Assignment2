@@ -95,6 +95,10 @@ header {
     gap: 10px;
 }
 
+.drop{
+    color: #5A5A5D;
+}
+
 .input {
     width: 100%;
     padding: 10px;
