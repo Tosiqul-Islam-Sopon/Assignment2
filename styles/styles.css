@@ -311,10 +311,58 @@ main {
     gap: 15px;
 }
 
+/* Our Best Tour Guides Section */
+.best_tour_guides {
+    margin-top: 80px;
+}
+
+.tour_guide_container {
+    width: 80%;
+    margin: auto;
+}
+
+.best_tour_guides_title {
+    color: #131318;
+    font-size: 2.2rem;
+    font-weight: 800;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.tour_guide {
+    display: flex;
+    gap: 40px;
+    margin-bottom: 20px;
+}
+
+.guide_info {
+    flex: 1;
+    padding: 20px;
+    border-radius: 8px;
+    color: #FFF;
+}
+
+.guide_name {
+    font-size: 1.6rem;
+    margin-bottom: 10px;
+}
+
+.guide_qualification {
+    font-size: 1rem;
+}
+
+.guide_image {
+    width: 200px;
+    border-radius: 8px;
+    /* margin-left: 20px; */
+}
+
+
 /* Newsletter */
 .newsletter {
     margin-top: 80px;
     display: flex;
+    justify-content: space-between;
     gap: 20px;
 }
 
@@ -357,7 +405,7 @@ main {
     width: 98%;
 }
 
-.newsletter_img img {
+.newsletter_img>img {
     width: 100%;
     /* position: relative; */
 }
@@ -484,6 +532,13 @@ footer{
         font-size: 1.5rem;
     }
     .choose_box3 {
+        width: 100%;
+    }
+    .tour_guide{
+        flex-direction: column-reverse;
+        gap: 0px;
+    }
+    .guide_image{
         width: 100%;
     }
     .newsletter{
