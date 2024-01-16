@@ -371,6 +371,7 @@ main {
 }
 
 .newsletter_text {
+    flex: 1;
     border-radius: 16px;
     border: 1px solid #FF5400;
 }
@@ -411,9 +412,11 @@ main {
 
 .newsletter_img>img {
     width: 100%;
+    height: 100%;
     /* position: relative; */
 }
 .newsletter_img{
+    flex: 1;
     position: relative;
 }
 
@@ -425,7 +428,7 @@ main {
     border-radius: 16px;
     background: #FF5400;
     transform: rotate(-19.628deg);
-    bottom: 10%;
+    bottom: 8%;
     right: 1%;
 }
 
